@@ -1,27 +1,5 @@
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        title Magic Mind - Home
-        link(href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet")
-        link(rel="stylesheet" href="css/normalize.css")
-        link(rel="stylesheet" href="css/styles.css")
-    body
-        .wrapper
-            .row
-                header
-            .row
-                nav.col-1
-                    ul
-                        li
-                            a(href="index.html") Home
-                        li
-                            a(href="summer.html") Summer
-                        li
-                            a(href="construction.html") Winter
-                        li
-                            a(href="construction") Contact us
+extends structure/_layout.pug
+block content
             .row
                 .col-1
                     h1 Magic Mind
@@ -117,6 +95,7 @@ html(lang="en")
                 .col-4
                     img(src="img/mountains_valleys/mountain4.jpg" class="img-1-4" alt="Fluffy clouds over a grassy peaks")
                     img(src="img/mountains_valleys/mountain4.jpg" class="my_popup16_close" id="my_popup16" alt="Fluffy clouds over a grassy peaks")
+                    button.my_popup16_open Enlarge picture
             .row
                 .col-1
                     h2 Perspectives
@@ -138,9 +117,6 @@ html(lang="en")
                     img(src="img/perspectives/perspective4.jpg" class="img-1-4" alt="Down the lush green garden")
                     img(src="img/perspectives/perspective4.jpg" class="my_popup20_close" id="my_popup20" alt="Down the lush green garden")
                     button.my_popup20_open Enlarge picture
-            .row
-                .col-1
-                    h6 2112 Settlers Lane | New York | New York | 10013 | ph: 917-815-9397
 
             // Include jQuery
             script(src="https://code.jquery.com/jquery-1.8.2.min.js")
