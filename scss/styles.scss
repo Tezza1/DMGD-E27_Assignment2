@@ -98,6 +98,12 @@ nav {
     -webkit-text-stroke-color: darken($primaryFontColor, 5%);
 }
 
+.constructionPage {
+    /* Bourbon */
+    background: tint(#CFDAF7, 70%);
+    border-radius: 1em;
+}
+
 .middleBanner {
     margin-bottom: 1.5em;
 }
@@ -137,6 +143,24 @@ nav {
 }
 
 /*--------------- Articles -------------------*/
+
+.miniHeader {
+    font-family: $secondaryFont;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.social {
+    /* Extends used */
+    @extend .miniHeader;
+}
+
+.miniHeader2 {
+    /* Extends used */
+    @extend .miniHeader;
+    font-size: 1.6em;
+}
+
 
 .socialMedia {
     list-style: none;
