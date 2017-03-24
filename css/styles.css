@@ -263,3 +263,119 @@ footer {
     footer h6 a {
       color: #464646;
       text-decoration: none; }
+
+/* --------------- Cards -----------------------*/
+.cards {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.card {
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  -webkit-flex-basis: 15em;
+  -ms-flex-preferred-size: 15em;
+  flex-basis: 15em;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #F8F2B4;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden; }
+    .card .card-image img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      width: 100%; }
+  .card .card-header {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #f6f6f6; }
+    .card:active .card-header {
+      background-color: #f6f6f6; }
+
+/* ---------------- Breadcrumbs ---------------- */
+/* http://refills.bourbon.io/components/ */
+.breadcrumb {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  text-align: left; }
+  .breadcrumb a {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-left: 0;
+    color: #999;
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 2.25em;
+    margin-bottom: 2px;
+    margin-right: -5px;
+    padding: 0 0.5625em 0 1.125em;
+    position: relative;
+    text-decoration: none; }
+    .breadcrumb a:first-child {
+      border-bottom-left-radius: 3px;
+      border-left: 1px solid gainsboro;
+      border-top-left-radius: 3px;
+      padding-left: 1.125em; }
+    .breadcrumb a:last-child {
+      background-color: white;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      color: #999;
+      padding-right: 1.125em; }
+    .breadcrumb a:focus, .breadcrumb a:hover {
+      background-color: white;
+      color: #477DCA; }
+    .breadcrumb a::after, .breadcrumb a::before {
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: 0;
+      left: 100%;
+      border-bottom: 1.125em solid transparent;
+      border-left: 0.5625em solid transparent;
+      border-top: 1.125em solid transparent;
+      content: "";
+      display: block;
+      margin: auto;
+      z-index: 2; }
+    .breadcrumb a:last-child::after, .breadcrumb a:last-child::before {
+      border: 0; }
+    .breadcrumb a::before {
+      border-left-color: gainsboro;
+      margin-left: 1px;
+      z-index: 1; }
+    .breadcrumb a::after {
+      border-left-color: white; }
