@@ -143,6 +143,9 @@ p {
   font-family: "Mukta Vaani", sans-serif;
   color: #606060; }
 
+img {
+  opacity: 0.85; }
+
 /* ------------ Header & Nav ------------- */
 nav ul {
   list-style: none; }
@@ -184,7 +187,12 @@ nav .fa {
 
 #homeBanner h1 {
   font-size: 3.5em;
-  font-weight: bold; }
+  font-weight: bold;
+  /* https://css-tricks.com/adding-stroke-to-web-text/ */
+  -webkit-text-fill-color: #464646;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #393939; }
 
 .middleBanner {
   margin-bottom: 1.5em; }
@@ -231,6 +239,7 @@ button {
   background: none;
   margin-top: 1em;
   font-family: "Mukta Vaani", sans-serif;
+  color: #6c6c6c;
   text-decoration: underline; }
 
 button .fa {
