@@ -41,8 +41,9 @@
     margin-right: 0.2%;
 }
 
+/* Extends used */
 .col-2_right {
-    margin-left: 0.2%;
+    @extend .col-2_left;
 }
 
 .col-3-1 {

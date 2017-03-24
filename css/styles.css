@@ -1,3 +1,4 @@
+/* Variables are located in this file */
 /* GRID LAYOUT OUTLINEE
    |-----------100%-----------| col-1 (100%) - 92%
    |-----50%----||-----50%----| col-2 (50%) - 44%
@@ -31,12 +32,10 @@
 .col-2 {
   width: 48.1%; }
 
-.col-2_left {
+.col-2_left, .col-2_right {
   margin-right: 0.2%; }
 
-.col-2_right {
-  margin-left: 0.2%; }
-
+/* Extends used */
 .col-3-1 {
   width: 60%; }
 
@@ -46,6 +45,7 @@
 .col-4 {
   width: 21%; }
 
+/* Mixins are located in this file */
 /*------Media query for tablets --------*/
 @media (min-width: 480px) and (max-width: 767px) {
   .col-4 {
@@ -54,9 +54,7 @@
     width: 92%; }
   .col-3-3 {
     width: 92%; }
-  .col-2_left {
-    margin: 0 4%; }
-  .col-2_right {
+  .col-2_left, .col-2_right, .col-2_right {
     margin: 0 4%; }
   .img-1-2 {
     margin-bottom: 2em; }
@@ -67,8 +65,6 @@
     float: left; }
   nav list-style:nth-child(even) {
     float: right; }
-  .stars .fa {
-    display: none; }
   button {
     margin-bottom: 1em; } }
 
@@ -76,9 +72,7 @@
 @media (max-width: 479px) {
   [class*="col-"] {
     width: 92%; }
-  .col-2_left {
-    margin: 0 4%; }
-  .col-2_right {
+  .col-2_left, .col-2_right, .col-2_right {
     margin: 0 4%; }
   .img-1-2 {
     height: 12em;
@@ -89,8 +83,6 @@
     width: 92%;
     float: none;
     padding-bottom: 0.5em; }
-  .stars .fa {
-    display: none; }
   button {
     margin-bottom: 1em; }
   #homeBanner h1 {
@@ -100,22 +92,31 @@
     padding: 0; } }
 
 /*------Media query for background image --------*/
-@media (max-width: 701px) {
-  header {
-    background: url(../img/meditation-banner-small.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100px;
-    margin-top: 0.3em; } }
-
 @media (min-width: 702px) {
   header {
     background: url(../img/meditation-banner.jpg) no-repeat;
+    /* Mixin with parameters */
+    /* Bourbon */
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
     background-size: cover;
     width: 100%;
     height: 150px;
     margin-top: 0.5em; } }
 
+@media (max-width: 701px) {
+  header {
+    background: url(../img/meditation-banner-small.jpg) no-repeat;
+    /* Mixin with parameters */
+    /* Bourbon */
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin-top: 0.3em; } }
+
+/* Mixins are located in this file */
 /* Border box declaration */
 html {
   box-sizing: border-box;
@@ -136,17 +137,25 @@ h3,
 h4,
 h5,
 h6 {
+  /* Mixin used */
   font-family: "Mukta Vaani", sans-serif;
   color: #464646; }
 
 p {
+  /* Variables used */
   font-family: "Mukta Vaani", sans-serif;
   color: #606060; }
 
 img {
-  opacity: 0.85; }
+  opacity: 0.8; }
+
+.fa {
+  padding: 0 1.5em;
+  /* Variable used */
+  color: #464646; }
 
 /* ------------ Header & Nav ------------- */
+/* Nesting to 2 levels */
 nav ul {
   list-style: none; }
 
@@ -160,17 +169,8 @@ nav a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold; }
-
-nav a:hover {
-  text-decoration: underline; }
-
-.fa {
-  padding: 0 1.5em;
-  color: #464646; }
-
-nav .fa {
-  padding-right: 0.5em;
-  font-size: 0.6em; }
+  nav a:hover {
+    text-decoration: underline; }
 
 /* ------------ Main banner ----------- */
 #homeBanner {
@@ -189,6 +189,7 @@ nav .fa {
   font-size: 3.5em;
   font-weight: bold;
   /* https://css-tricks.com/adding-stroke-to-web-text/ */
+  /* Variables used, Built-in Sass function used */
   -webkit-text-fill-color: #464646;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.2px;
@@ -199,11 +200,13 @@ nav .fa {
 
 /*--------------- Images -------------------*/
 [class*='img-'] {
+  /* Mixin used */
   box-shadow: 10px 10px 5px #888888;
   border-radius: 2%; }
 
 .img-1-3 {
   width: 90%;
+  /* Variable + math */
   height: 20em; }
 
 .img-1-4 {
@@ -212,6 +215,7 @@ nav .fa {
 
 .img-1-2 {
   width: 90%;
+  /* Variable + math */
   height: 16em; }
 
 .img-1-1 {
@@ -228,6 +232,7 @@ nav .fa {
 .socialMedia a {
   text-decoration: none;
   font-weight: bold;
+  /* Variable used */
   color: #464646; }
 
 .hulk {
@@ -238,6 +243,7 @@ button {
   border: none;
   background: none;
   margin-top: 1em;
+  /* Variables used, Built-in Sass function used */
   font-family: "Mukta Vaani", sans-serif;
   color: #6c6c6c;
   text-decoration: underline; }
@@ -246,20 +252,14 @@ button .fa {
   padding-left: 0.4em; }
 
 /*------------ Footer --------------------*/
+/* Nesting to 2 levels */
 footer {
   padding-top: 2em; }
-
-footer .fa {
-  color: #464646;
-  float: none;
-  margin: 2em; }
-
-footer a {
-  color: #464646;
-  text-decoration: none;
-  float: none; }
-
-footer h6 {
-  float: none;
-  text-align: center;
-  padding-top: 1em; }
+  footer h6 {
+    text-align: center;
+    padding-top: 1em; }
+    footer h6 .fa {
+      color: #464646; }
+    footer h6 a {
+      color: #464646;
+      text-decoration: none; }

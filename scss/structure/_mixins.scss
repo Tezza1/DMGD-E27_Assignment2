@@ -1,3 +1,6 @@
+/* Mixins are located in this file */
+@import "bourbon";
+
 @mixin keyFont {
     font-family: $primaryFont;
     color: $primaryFontColor;
@@ -6,4 +9,13 @@
 @mixin pictureShadow {
     box-shadow: 10px 10px 5px #888888;
     border-radius: 2%;
+}
+
+@mixin topBanner($height, $topMargin) {
+        /* Bourbon */
+        @include border-top-radius(1%);
+        background-size: cover;
+        width: 100%;
+        height: #{$height};
+        margin-top: #{$topMargin};
 }
