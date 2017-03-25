@@ -19,3 +19,12 @@
         height: #{$height};
         margin-top: #{$topMargin};
 }
+
+@mixin borderTest ($testBoolean) {
+    @if $boolean { 
+        border-radius: 1%;
+    }
+    @else {
+         border-radius: 1%;
+    }
+}
