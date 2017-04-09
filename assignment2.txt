@@ -1,0 +1,70 @@
+﻿The below is worth 90% of your assignment grade:
+Build a Responsive Website
+
+Build a 2-3 page responsive website, using the principles discussed previously in class. 
+
+You may use your responsive website from Assignment 1 if you wish, or you may build a new one.  
+
+This responsive website should include the following features:
+
+A responsive website should include a grid system, media queries, and images that resize.
+Your grid system and media queries should be custom-coded.
+The grid system can have as many or as few columns as you require.
+You should include at least two media queries in your CSS. You may have more than this if you require it.
+The images that resize may be a solution that you download. Use one from class, or use another solution you’ve found that you like better.
+The site should include a navigation bar that links the relevant pages together, and it should be available on all pages of the site.
+Please write your own content for this website. Do not copy content from Wikipedia or some other source. I’d like you to write your own markup from scratch, not copy the markup from some other website and plop it into your document. It’s easy to copy markup if you’re copying content from the web.
+
+If you need images for your site, you can find many free image websites online. I like http://www.freeimages.com/ (Links to an external site.) but there are many others. Remember that only .jpg, .png, and .gif images work on the web, and remember that you should resize your images to optimize download time. You are also welcome to use image placeholder services like lorempixel.com.
+Post your website on your web hosting space, whether that’s at SiteGround or another service.
+
+Now add Sass
+
+Write, or rework, your CSS into Sass.
+When compiling your Sass, make sure the output is expanded, not nested, compact, or compressed.
+Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.
+Use variables whenever values are repeated. Comment the section where variables are stored.
+Create at least 1 custom-coded mixin. Comment the section where mixins are stored.
+Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
+Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists.
+Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
+** Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
+You are not required to use loops or write your own functions with Sass, but you’re welcome to do so for the Instructor's Choice portion of your grade.
+Use at least 2 partial files in managing your Sass.
+
+Now add Bourbon
+
+Link Bourbon and Neat to your Sass file correctly. Integrate this into your partial files in some way.
+Make use of at least 3 Bourbon mixins, functions, add-ons, and/or settings in your Sass files. Comment each instance of these in your Sass, and include Sass line numbers in your submission.
+As mentioned in the video, many mixins, functions, add-ons, and settings are deprecated from version 4.x to version 5.0 beta 7. You may use deprecated items for this assignment if you wish, provided they are compiling.
+Make use of at least 2 Refills Components and/or Patterns (not Typography, meaning the stuff appearing on the Typography tab at the top of the page. Typography options appearing in Components or Patterns are OK.). Comment your HTML, Sass, and JavaScript (if applicable) to indicate which component and/or pattern you're using. Include line numbers in your submission.
+Once you've added these components and/or patterns, modify the Sass (and HTML, if applicable) to better match your site and to DRY out your code. Example: reference your own color or size variables.
+Color and typography requirements
+
+Include at least two typefaces that come from the web.
+You may use any source you want for the typefaces, including Google Fonts, Typekit, etc etc etc.
+You may host your own typefaces, provided they are licensed such that they can be shared on the web.
+The typefaces should be either concordant or contrasting. No conflicting typefaces!
+** Incorporate type scaling in your design. The type should look good throughout the website, not just at desktop (or mobile) dimensions. See supporting lecture materials or the Typography portion of Refill for some options. Do not use the "Typography" portion of Refill to meet this requirement, or any other type system. I want you to write your own scale. 
+Create a color scheme for your site based on a starting color and its compliment. You may use Natalya Shelburne's Sass formulas in your work, but comment exactly where her work appears in your code.
+
+10% of your grade is "Instructor's Choice" 
+
+Ask in the discussion forum if you're not sure if your idea might count, if it's not listed below.
+
+Well-structured, interesting, engaging content
+Use of Sass loops: See provided article in week 5. Do not copy the code directly!!! Make your own loop, but use the article to give you ideas and to help you understand the syntax.
+Create your own custom Sass function: Again, do not copy my pxtoem function, but you may use it and the rest of Sass's built-in functions for inspiration for your own functions.
+Super dry, well-structured Sass: making use of variables that link stogether to control the overall size of the document (i.e. hooking together a base font size with other font sizes, padding, margins, etc), interesting mixin choices that you code
+Work with Neat: Use Neat as your grid system for the responsive design portion of the assignment. Comment your code carefully so it's clear what is your grid system and what is the Neat grid system.
+Write your own color scheme generation system starting with 1-3 colors. Consider monochromatic, analogous, or triad color schemes.
+Something else that catches our eye -- it should relate to Sass, so no jQuery Form Validation, for example.
+
+----------------------------------------------------------
+Website address:
+
+
+IINSTRUCTORS'S CHOICE:
+- learnt pug for this assignment 
+- used extends & include to build a template
+- next assignment will try to use variables, etc.

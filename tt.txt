@@ -1,0 +1,36 @@
+URL: http://terrys.sgedu.site/DGMD-E27_Assignment2/
+On: Windows 10 / Chrome
+Files also hosted on github: https://github.com/Tezza1/DMGD-E27_Assignment2 
+
+SASS:
+Variables section: scss/structure/_variables [ Lines 2- 8 ]
+Custom mixin - scss/structure/_mixins [ Lines 4 - 21] 
+Extend - scss/styles.scss [ Lines 154 & 159 ] AND scss/structre/_grid.scss [ Line 44 ]
+Nesting - scss/styles.scss [ Lines 54 & 196 ]
+Built-in Sass functions - scss/styles.scss [ Lines 95 & 186 ]
+If/else - scss/structure/_mixin [ Line 23 ]
+
+BOURBON:
+#1 - scss/structure/_mixin [ Line 15 ]
+#2 - scss/styles.scss [ Line 87 ]
+#3 - scss/styles.scss [ Line 102 ]
+
+REFILLS:
+#1- scss/styles.scss [ Line 216 ]
+#2- scss/styles.scss [ Line 302 ]
+
+FONT:
+#1- scss/structure/_variables [ Line 2 ]
+#2- scss/structure/_variables [ Line 3 ]
+
+TYPE SCALING:
+scss/structure/_media [ Line 75 ]
+
+COLOR SCHEME:
+scss/structure/_variables [ Line 4 and 5 ]
+scss/styles.scss [ Lines 13 and 23 ]
+
+INSTRUCTOR'S CHOICE
+- learnt pug for this assignment 
+- used extends & include to build a template
+- next assignment will try to use variables, etc.
